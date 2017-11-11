@@ -1,5 +1,13 @@
 from csv import *
 
+inFile = open('gradesRaw.csv', 'r')
+csvReader = reader(inFile, delimiter = ',')
+
+f = open('gradeSheet.csv', 'w')
+
+def grades(array):
+    return()
+
 def gradeScores(totalGrade):
 
     if grade >= 91 and grade <= 100:
