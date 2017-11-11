@@ -3,10 +3,6 @@ from csv import *
 inFile = open('gradesRaw.csv', 'r')
 csvReader = reader(inFile, delimiter = ',')
 
-f = open('gradeSheet.csv', 'w')
-
-def grades(array):
-    return()
 
 def gradeScores(totalGrade):
 
@@ -23,3 +19,11 @@ def gradeScores(totalGrade):
 
     else:
         return("F")
+
+
+
+
+f = open('gradeSheet.csv', 'w')
+csvwriter = writer(f, delimiter=',', lineterminator="\n")
+headers = [["Name", "Total", "Letter Grade"]]
+csvwriter.writerows(headers)
